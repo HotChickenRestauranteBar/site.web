@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOT CHICKEN | Menú</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <style>
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    nav a {
+      cursor: pointer;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #ffc107;
+      padding-bottom: 0.8rem;
+    }
+    .item-text h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #da9700;
+    }
+    .item-text p {
+      margin: 0.3rem 0 0;
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .item-price {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #c63400;
+      white-space: nowrap;
+      margin-left: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-animado-1.png" alt="Logo Hot Chicken" class="logo" />
+    <h1>HOT CHICKEN</h1>
+    <p>Restaurante & Bar</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a onclick="mostrarSeccion('hamburguesas')">Hamburguesas</a></li>
+      <li><a onclick="mostrarSeccion('perros')">Perros Calientes</a></li>
+      <li><a onclick="mostrarSeccion('broaster')">Pollo Broaster</a></li>
+      <li><a onclick="mostrarSeccion('especiales')">Platos Especiales</a></li>
+      <li><a onclick="mostrarSeccion('caldos')">Caldos</a></li>
+      <li><a onclick="mostrarSeccion('patacones')">Patacones</a></li>
+      <li><a onclick="mostrarSeccion('chicharronadas')">Chicharronadas</a></li>
+      <li><a onclick="mostrarSeccion('picadas')">Picadas</a></li>
+      <li><a onclick="mostrarSeccion('adicionales')">Adicionales</a></li>
+      <li><a onclick="mostrarSeccion('jugos')">Jugos Naturales</a></li>
+      <li><a onclick="mostrarSeccion('limonadas')">Limonadas Especiales</a></li>
+      <li><a onclick="mostrarSeccion('bebidas')">Bebidas</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="hamburguesas" class="active">
+      <h2>HAMBURGUESAS</h2>
+      <div class="menu-item">
+        <div class="item-text">
+          <h3>Hamburguesa Sencilla</h3>
+          <p>Pan bimbo, huevo frito, 150g de carne, jamón, vegetales, queso doble crema y papas a la francesa.</p>
+        </div>
+        <div class="item-price">$15.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-text">
+          <h3>Hamburguesa Mixta</h3>
+          <p>Pan bimbo, 150g de carne, huevo frito, 100g de pollo, jamón, tocineta, queso chedar, queso doble crema, vegetales, papas a la francesa.</p>
+        </div>
+        <div class="item-price">$20.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-text">
+          <h3>Hamburguesa Doble Carne</h3>
+          <p>Pan bimbo, 300g de carne, 100g de pollo, jamón, tocineta, huevo frito, queso doble crema, queso chedar y papas a la francesa.</p>
+        </div>
+        <div class="item-price">$25.000</div>
+      </div>
+    </section>
+
+    <section id="perros">
+      <h2>PERROS CALIENTES</h2>
+      <div class="menu-item">
+        <div class="item-text">
+          <h3>Perro Sencillo</h3>
+          <p>Pan bimbo, salchicha americana, jamón, queso gratinado, vegetales y papitas.</p>
+        </div>
+        <div class="item-price">$10.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-text">
+          <h3>Perro Mixto</h3>
+          <p>Pan bimbo, salchicha americana, 100g de carne, tocineta, huevo cocido, jamón, queso chedar gratinado, vegetales y papitas.</p>
+        </div>
+        <div class="item-price">$15.000</div>
+      </div>
+      <div class="menu-item">
+        <div class="item-text">
+          <h3>Super Perro</h3>
+          <p>Pan bimbo, salchicha americana, 100g de pollo, 150g de carne, tocineta, huevo cocido, jamón, queso chedar gratinado, vegetales y papitas.</p>
+        </div>
+        <div class="item-price">$20.000</div>
+      </div>
+    </section>
+
+    <section id="broaster">
+      <h2>BROASTER & MÁS</h2>
+      <div class="menu-item"><div class="item-text"><h3>1 Pollo</h3><p>Incluye: Papas y arepas.</p></div><div class="item-price">$55.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>1/2 Pollo</h3><p>Incluye: Papas y arepas.</p></div><div class="item-price">$30.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>1/4 Pollo</h3><p>Incluye: Papas y arepas.</p></div><div class="item-price">$15.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>1 Presa</h3><p>Incluye: Papas y arepas.</p></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>1 Pechuga</h3><p>Incluye: Papas y arepas.</p></div><div class="item-price">$12.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Media Pechuga Broaster</h3><p>Pechuga crocante al broaster, acompañada de patacones dorados, ensalada fresca con maíz dulce y papas a la francesa.</p></div><div class="item-price">$20.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Pechuga Apanada Full</h3><p>400g de pechuga dorada, patacones, papas a la francesa y ensalada fresca.</p></div><div class="item-price">$25.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Alitas Apanadas</h3><p>400g de alitas crujientes con papas y arepas.</p></div><div class="item-price">$20.000</div></div>
+    </section>
+
+    <section id="especiales">
+      <h2>PLATOS ESPECIALES</h2>
+      <div class="menu-item"><div class="item-text"><h3>Costillas BBQ</h3><p>400g de costilla bañada en salsa BBQ, con patacones, papas y ensalada.</p></div><div class="item-price">$30.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Churrasco Argentino</h3><p>500g de lomo flameado al vino tinto, con papas, patacones y.</p></div><div class="item-price">$35.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Cachama Frita</h3><p>Cachama crocante al punto, servida con arroz blanco, ensalada fresca y patacones dorados.</p></div><div class="item-price">$25.000</div></div>
+    </section>
+
+<!-- ... encabezado, nav y otras secciones ... -->
+
+    <section id="caldos">
+      <h2>CALDOS</h2>
+      <div class="menu-item"><div class="item-text"><h3>Costilla con arepa</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Lagarto con arepa</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Menudencia con arepa</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Pescado estilo tradicional</h3></div><div class="item-price">$10.000</div></div>
+    </section>
+
+    <section id="patacones">
+      <h2>PATACONES</h2>
+      <div class="menu-item"><div class="item-text"><h3>Patacón Clásico Verde</h3><p>Patacón verde con 200g de carne, 100g de pollo, tocineta, jamón de pierna, maíz dulce, vegetales, huevo cocido y queso gratinado.</p></div><div class="item-price">$30.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Patacón Dulce Tentación</h3><p>Patacón maduro con 200g de carne, 100g de pollo, tocineta, jamón de pierna, maíz dulce, vegetales, huevo cocido y queso gratinado.</p></div><div class="item-price">$30.000</div></div>
+    </section>
+
+    <section id="chicharronadas">
+      <h2>CHICHARRONADAS</h2>
+      <div class="menu-item"><div class="item-text"><h3>La Chicharronada</h3><p>400g de chicharrón con patacones, papas, ensalada tipo ceviche y salsas.</p></div><div class="item-price">$20.000 En adelante.</div></div>
+    </section>
+
+    <section id="picadas">
+      <h2>PICADAS</h2>
+      <div class="menu-item"><div class="item-text"><h3>Picada JM</h3><p>Carne, pollo, maíz dulce, 3 tipos de salchicha, queso rallado, maduro, patacones, papas, ensalada y salsas.</p></div><div class="item-price">$20.000 / $30.000 / $40.000 / $50.000 / $60.000</div></div>
+    </section>
+
+    <section id="adicionales">
+      <h2>ADICIONALES</h2>
+      <div class="menu-item"><div class="item-text"><h3>Papas a la francesa</h3></div><div class="item-price">$5.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Rapiyuca</h3></div><div class="item-price">$5.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Arepas</h3></div><div class="item-price">$5.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Patacones</h3></div><div class="item-price">$5.000</div></div>
+    </section>
+
+    <!-- Las secciones jugos, limonadas, bebidas no tienen precios definidos aún -->
+
+    <section id="jugos">
+      <h2>JUGOS NATURALES</h2>
+      <div class="menu-item"><div class="item-text"><h3>Fresa</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Piña</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Banano</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Guayaba</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Guanábana</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Borojo</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Lulo</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Maracuyá</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Milo</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Tomate de Árbol</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Curuba</h3></div><div class="item-price">$10.000</div></div>
+      <p><em>Servidos en agua o leche</em></p>
+    </section>
+
+    <section id="limonadas">
+      <h2>LIMONADAS ESPECIALES</h2>
+      <div class="menu-item"><div class="item-text"><h3>Limonada Brasilera</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Limonada de Maracuyá</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Mango Daiquiri</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Cerezada</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Limonada de Coco</h3></div><div class="item-price">$10.000</div></div>
+      <div class="menu-item"><div class="item-text"><h3>Naranjada</h3></div><div class="item-price">$10.000</div></div>
+    </section>
+
+    <section id="bebidas">
+      <h2>BEBIDAS</h2>
+      <div class="menu-item"><div class="item-text"><h3>Coca-Cola 1.5 L</h3></div><div class="item-price"></div></div>
+      <div class="menu-item"><div class="item-text"><h3>Coca-Cola 400 ml</h3></div><div class="item-price"></div></div>
+      <div class="menu-item"><div class="item-text"><h3>Coca-Cola 350 ml</h3></div><div class="item-price"></div></div>
+      <div class="menu-item"><div class="item-text"><h3>Gaseosa 3 L</h3></div><div class="item-price"></div></div>
+      <div class="menu-item"><div class="item-text"><h3>Jugo Hit 500 ml</h3></div><div class="item-price"></div></div>
+      <div class="menu-item"><div class="item-text"><h3>Soda</h3></div><div class="item-price"></div></div>
+      <div class="menu-item"><div class="item-text"><h3>Pony Malta 1.5 L</h3></div><div class="item-price"></div></div>
+      <div class="menu-item"><div class="item-text"><h3>Pony Malta litro</h3></div><div class="item-price"></div></div>
+      <div class="menu-item"><div class="item-text"><h3>Pony Malta personal (NR)</h3></div><div class="item-price"></div></div>
+      <div class="menu-item"><div class="item-text"><h3>Gatorade</h3></div><div class="item-price"></div></div>
+      <div class="menu-item"><div class="item-text"><h3>Esporade</h3></div><div class="item-price"></div></div>
+      <div class="menu-item"><div class="item-text"><h3>Agua</h3></div><div class="item-price"></div></div>
+    </section>
+
+  <!-- ... pie de página y script ... -->
+
+  </main>
+
+  <footer>
+    <p>📍 <span style="color: #ccc">Av. 1 #25-2 A 25-114, Los Patios, Norte de Santander</span></p>
+    <p>📱 <a href="https://wa.me/573223420507" target="_blank">322 342 0507 (Haz tu pedido por WhatsApp)</a></p>
+    <p style="color: #888">© 2025 Hot Chicken Restaurante & Bar</p>
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('main section');
+      secciones.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
